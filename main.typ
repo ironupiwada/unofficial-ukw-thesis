@@ -1,4 +1,4 @@
-#import "@preview/ukw-unofficial-thesis:0.1.0": ukw-thesis, zalacznik
+#import "@preview/ukw-bipg-unofficial-thesis:0.1.0": ukw-thesis, zalacznik
 
 #show: ukw-thesis.with(
   // ——— Dane do strony tytułowej (zał. nr 2) ———
