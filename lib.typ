@@ -1,4 +1,4 @@
-// ukw-bipg-thesis — szablon pracy dyplomowej
+// ukw-bipg-unofficial-thesis — szablon pracy dyplomowej
 // Kierunek: Badanie i Projektowanie Gier, Wydział Nauk o Kulturze, UKW w Bydgoszczy
 // Zgodny z Regulaminem dyplomowania zatwierdzonym 27 stycznia 2026 r.
 
