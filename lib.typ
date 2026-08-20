@@ -88,16 +88,16 @@
 #let ukw-declaration(meta, s) = {
   set par(justify: true, leading: 1em)
   align(right)[Załącznik nr 1 do Zarządzenia Nr 53/2022/2023 \ Rektora UKW z dnia 10 maja 2023 r.]
-  v(1cm)
+  v(0.8cm)
   grid(columns: 1, row-gutter: 0.8em,
     [#meta.author \ #text(9pt)[nazwisko i imię]],
     [#meta.album \ #text(9pt)[nr albumu]],
     [#meta.field \ #text(9pt)[kierunek studiów]],
     [#meta.study-type \ #text(9pt)[typ studiów i forma kształcenia]],
   )
-  v(1cm)
-  align(center)[#text(13pt, weight: "bold")[#s.declaration-title] \ #s.declaration-sub]
   v(0.8cm)
+  align(center)[#text(13pt, weight: "bold")[#s.declaration-title] \ #s.declaration-sub]
+  v(0.6cm)
   [
     Świadoma(y) odpowiedzialności prawnej oświadczam, że praca dyplomowa
     #emph(meta.title)
@@ -112,14 +112,14 @@
     2) drukowana wersja pracy dyplomowej jest identyczna z wprowadzoną do systemu APD
     wersją elektroniczną.
   ]
-  v(1.5cm)
+  v(0.8cm)
   align(right)[#ukw-line(width: 45%) \ #h(6em) #text(9pt)[(podpis studentki/a)]]
-  v(1cm)
+  v(0.8cm)
   [Bydgoszcz, dn. #ukw-line(width: 30%)]
-  v(1cm)
+  v(0.8cm)
   [Wyrażam zgodę / nie wyrażam zgody\* na udostępnienie przez Uniwersytet pracy dyplomowej
    dla potrzeb działalności badawczej i dydaktycznej.]
-  v(1cm)
+  v(0.8cm)
   align(right)[#ukw-line(width: 45%) \ #h(6em) #text(9pt)[(podpis studentki/a)]]
   v(1fr)
   text(9pt)[\* niepotrzebne skreślić]
@@ -242,7 +242,7 @@
   ukw-abstract(meta, s, abstract, keywords)
 
   set page(numbering: "1")
-  counter(page).update(1)
+  counter(page).update(7)
 
   // b) spis treści
   {
