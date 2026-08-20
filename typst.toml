@@ -1,6 +1,6 @@
 [package]
 name = "ukw-bipg-unofficial-thesis"
-version = "0.1.1"
+version = "0.1.0"
 entrypoint = "lib.typ"
 license = "MIT-0"
 authors = ["Filip Jankowski <@ironupiwada>"]
@@ -12,12 +12,12 @@ keywords = [
     "university",
     "polish",
 ]
+categories = ["thesis", "layout"]
 compiler = "0.13.0"
 exclude = ["example.pdf"]
 
 [template]
 path = "template"
 entrypoint = "main.typ"
-thumbnail = "template/example.png"
 
 [tool]
