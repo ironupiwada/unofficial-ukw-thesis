@@ -1,12 +1,12 @@
 # unofficial-ukw-thesis
 
-# English
+## English
 
 Typst template for bachelor's and master's theses in **Game Studies and Design**
 (Faculty of Cultural Studies, Kazimierz Wielki University in Bydgoszcz), compliant with
 the *Diploma Regulations* approved by the College I Council on 27 January 2026.
 
-## Quick start
+### Quick start
 
 ```bash
 typst init @preview/ukw-bipg-thesis:0.1.0 my-thesis
@@ -14,7 +14,7 @@ cd my-thesis
 typst watch main.typ
 ```
 
-## What the template handles automatically
+### What the template handles automatically
 
 | Regulation requirement | Implementation |
 |---|---|
@@ -32,13 +32,13 @@ typst watch main.typ
 Print control numbers (§2(3)(a)) come from the APD system — they are added to the file
 downloaded from APD, not in Typst.
 
-## `ukw-thesis` parameters
+### `ukw-thesis` parameters
 
 `title`, `subtitle`, `author`, `album`, `supervisor`, `field`, `study-type`,
 `degree` (`"bachelor"` | `"master"`), `year`, `lang`, `abstract`, `keywords`,
 `bibliography-file`, `bibliography-style`, `list-of-figures`, `list-of-tables`, `draft`.
 
-## Practical notes
+### Practical notes
 
 - **Font**: if Times New Roman is not available on your system, the template falls back to
   TeX Gyre Termes (metrically compatible). For printing, it is worth compiling with TNR
@@ -49,13 +49,13 @@ downloaded from APD, not in Typst.
   (Order No. 34/2025/2026 of the KWU Rector) — the template takes no stance on this.
 - **Appendices**: `#zalacznik(1, "Title")[content]`.
 
-# Polish
+## Polish
 
 Szablon Typst pracy licencjackiej i magisterskiej dla kierunku **Badanie i Projektowanie Gier**
 (Wydział Nauk o Kulturze, Uniwersytet Kazimierza Wielkiego w Bydgoszczy), zgodny z
 *Regulaminem dyplomowania* zatwierdzonym przez Radę Kolegium I 27 stycznia 2026 r.
 
-## Szybki start
+### Szybki start
 
 ```bash
 typst init @preview/ukw-bipg-thesis:0.1.0 moja-praca
@@ -63,7 +63,7 @@ cd moja-praca
 typst watch main.typ
 ```
 
-## Co szablon robi automatycznie
+### Co szablon robi automatycznie
 
 | Wymóg regulaminu | Realizacja |
 |---|---|
@@ -81,13 +81,13 @@ typst watch main.typ
 Numery kontrolne wydruku (§2 ust. 3a) pochodzą z systemu APD — dodaje się je do pliku
 pobranego z APD, a nie w Typście.
 
-## Parametry `ukw-thesis`
+### Parametry `ukw-thesis`
 
 `title`, `subtitle`, `author`, `album`, `supervisor`, `field`, `study-type`,
 `degree` (`"bachelor"` | `"master"`), `year`, `lang`, `abstract`, `keywords`,
 `bibliography-file`, `bibliography-style`, `list-of-figures`, `list-of-tables`, `draft`.
 
-## Uwagi praktyczne
+### Uwagi praktyczne
 
 - **Czcionka**: jeśli w systemie nie ma Times New Roman, szablon użyje TeX Gyre Termes
   (metrycznie zgodny). Do wydruku warto skompilować z zainstalowanym TNR:
