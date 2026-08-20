@@ -1,3 +1,5 @@
+# unofficial-ukw-thesis
+
 ## English
 
 Typst template for bachelor's and master's theses in **Game Studies and Design**
@@ -96,4 +98,4 @@ pobranego z APD, a nie w Typście.
   (Zarządzenie Nr 34/2025/2026 Rektora UKW) — szablon niczego tu nie przesądza.
 - **Załączniki**: `#zalacznik(1, "Tytuł")[treść]`.
 
-Licencja: MIT-0.
+Licence: MIT-0.

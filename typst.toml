@@ -1,6 +1,6 @@
 [package]
 name = "ukw-bipg-unofficial-thesis"
-version = "0.1.0"
+version = "0.1.1"
 entrypoint = "lib.typ"
 license = "MIT-0"
 authors = ["Filip Jankowski <@ironupiwada>"]
