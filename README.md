@@ -1,4 +1,55 @@
-# ukw-bipg-thesis
+# unofficial-ukw-thesis
+
+# English
+
+Typst template for bachelor's and master's theses in **Game Studies and Design**
+(Faculty of Cultural Studies, Kazimierz Wielki University in Bydgoszcz), compliant with
+the *Diploma Regulations* approved by the College I Council on 27 January 2026.
+
+## Quick start
+
+```bash
+typst init @preview/ukw-bipg-thesis:0.1.0 my-thesis
+cd my-thesis
+typst watch main.typ
+```
+
+## What the template handles automatically
+
+| Regulation requirement | Implementation |
+|---|---|
+| §2(1) — Polish or English | `lang: "pl"` / `"en"` (also switches the names of the lists) |
+| §2(2) — A4, Times New Roman 12 pt, 1.5 line spacing, 2.5 cm margins, justified | `page` / `text` / `par` settings |
+| §2(3) — double-sided printing | two-sided layout; `draft: true` while writing |
+| §2(4) — uniform pagination, continuous footnotes, chapters starting on odd pages | `heading` + `pagebreak(to: "odd")`, `footnote` with continuous numbering |
+| §2(5)(a) — title page (Appendix 2) | generated from metadata |
+| §2(5)(b) — table of contents | `outline` |
+| §2(5)(d) — bibliography | `bibliography-file` (BibTeX/Hayagriva) |
+| §2(5)(e) — lists of figures, tables and charts | `list-of-figures`, `list-of-tables` |
+| §2(5)(f) — abstract and keywords (Appendix 3) | `abstract`, `keywords` + 1000-character counter |
+| §2(5)(g) — author's declaration (Appendix 1) | generated from metadata |
+
+Print control numbers (§2(3)(a)) come from the APD system — they are added to the file
+downloaded from APD, not in Typst.
+
+## `ukw-thesis` parameters
+
+`title`, `subtitle`, `author`, `album`, `supervisor`, `field`, `study-type`,
+`degree` (`"bachelor"` | `"master"`), `year`, `lang`, `abstract`, `keywords`,
+`bibliography-file`, `bibliography-style`, `list-of-figures`, `list-of-tables`, `draft`.
+
+## Practical notes
+
+- **Font**: if Times New Roman is not available on your system, the template falls back to
+  TeX Gyre Termes (metrically compatible). For printing, it is worth compiling with TNR
+  installed: `typst compile --font-path ./fonts main.typ`.
+- **Printing**: before submission, set `draft: false` so that chapters begin on odd pages
+  and blank verso pages are inserted correctly.
+- **AI**: the use of artificial intelligence tools is governed by separate KWU regulations
+  (Order No. 34/2025/2026 of the KWU Rector) — the template takes no stance on this.
+- **Appendices**: `#zalacznik(1, "Title")[content]`.
+
+# Polish
 
 Szablon Typst pracy licencjackiej i magisterskiej dla kierunku **Badanie i Projektowanie Gier**
 (Wydział Nauk o Kulturze, Uniwersytet Kazimierza Wielkiego w Bydgoszczy), zgodny z
@@ -46,11 +97,5 @@ pobranego z APD, a nie w Typście.
 - **AI**: wykorzystanie narzędzi sztucznej inteligencji regulują odrębne przepisy UKW
   (Zarządzenie Nr 34/2025/2026 Rektora UKW) — szablon niczego tu nie przesądza.
 - **Załączniki**: `#zalacznik(1, "Tytuł")[treść]`.
-
-## Publikacja w Typst Universe
-
-Zawartość katalogu skopiuj do `packages/preview/ukw-bipg-thesis/0.1.0/` w forku repozytorium
-[`typst/packages`](https://github.com/typst/packages), uzupełnij `repository` w `typst.toml`,
-dodaj `thumbnail.png` (pierwsza strona przykładu, ≤ 1 MB, format PNG) i złóż pull request.
 
 Licencja: MIT-0.
