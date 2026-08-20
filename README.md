@@ -1,5 +1,3 @@
-# unofficial-ukw-thesis
-
 ## English
 
 Typst template for bachelor's and master's theses in **Game Studies and Design**
