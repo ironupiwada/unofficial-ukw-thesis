@@ -1,8 +1,8 @@
-#import "@preview/ukw-bipg-thesis:0.1.0": ukw-thesis, zalacznik
+#import "@preview/ukw-unofficial-thesis:0.1.0": ukw-thesis, zalacznik
 
 #show: ukw-thesis.with(
   // ——— Dane do strony tytułowej (zał. nr 2) ———
-  title: "Proceduralna generacja poziomów jako narzędzie projektowania rozgrywki",
+  title: "Proceduralne generowanie poziomów jako narzędzie projektowania rozgrywki",
   subtitle: none,
   author: "Anna Kowalska",
   album: "123456",
@@ -15,11 +15,11 @@
 
   // ——— Streszczenie i słowa kluczowe (zał. nr 3, max. 1000 znaków, max. 10 słów) ———
   keywords: (
-    "proceduralna generacja", "projektowanie poziomów", "mechaniki gier",
+    "proceduralne generowanie", "projektowanie poziomów", "mechaniki gier",
     "roguelike", "game design",
   ),
   abstract: [
-    Praca analizuje wykorzystanie proceduralnej generacji poziomów w projektowaniu
+    Praca analizuje wykorzystanie proceduralnego generowania poziomów w projektowaniu
     rozgrywki gier cyfrowych. Celem badania jest ustalenie, w jaki sposób parametry
     algorytmów generacyjnych przekładają się na doświadczenie gracza. W części
     teoretycznej omówiono stan badań, w części praktycznej przedstawiono prototyp
